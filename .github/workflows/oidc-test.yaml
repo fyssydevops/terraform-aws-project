@@ -14,7 +14,7 @@ jobs:
     steps:
 
     # This action is a very common action, used to download the repo then cd to its folder
-    - name: Download repo and cd to the repo folder
+    - name: Download repo and cd to the repository folder
       uses: actions/checkout@v2
 
     # This is an aws provided action, that logs in into an AWS account using an OIDC connection.
@@ -22,7 +22,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         # Hands-on 1: Replace this with your OIDC role
-        role-to-assume: arn:aws:iam::137964139679:role/deployment_role
+        role-to-assume: arn:aws:iam::137964139679:role/deployment-role
         aws-region: eu-central-1
 
     # This is a simple test to make sure that we were logged in successfully
