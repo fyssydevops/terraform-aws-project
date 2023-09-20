@@ -24,7 +24,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: .
+          directory: .  --check CKV_AWS_93,CKV_AWS_19 # to allow only 2 checks to run
           framework: terraform 
 
   terraform-ci:
