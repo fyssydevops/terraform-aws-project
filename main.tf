@@ -9,7 +9,7 @@
 
 # Hands-on 4: use the module from the repo terraform-aws-s3-module
 
-module "consul" {
+module "s3" {
 source = "https://github.com/fyssydevops/terraform-aws-s3-module.git"
 s3_bucket_name = "dob-sep-bucket-oajewole"
 }
